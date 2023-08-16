@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gray_00: #FFFFFF;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+section {
+  display: block;
+}
+
+section > .content {
+  width: 1000px;
+  margin: 0 auto;
+}

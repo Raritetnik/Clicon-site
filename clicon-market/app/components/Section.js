@@ -1,9 +1,7 @@
 export default function Section(props) {
-    const bgColor = props.bgColor || 'transparent';
-    const textColor = props.textColor || 'black';
     return (
-      <section className="baseSection" style={{ backgroundColor: bgColor, color: textColor }}>
-        <div className="content">
+      <section className="baseSection" style={props.styleConfig}>
+        <div className={"content "+props.classes}>
             {props.children}
         </div>
       </section>
